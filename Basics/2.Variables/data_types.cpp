@@ -15,7 +15,7 @@ int main()
     short int sNum = SHRT_MAX;       // 16 bits
     long int lNum = LONG_MAX;        // 32 bits
     long long int llNum = LLONG_MAX; // 64 bits
-                                     // unsigned
+    // unsigned
     unsigned int num1 = UINT_MAX;
     unsigned short int sNum1 = USHRT_MAX;
     unsigned long int lNum1 = ULONG_MAX;
