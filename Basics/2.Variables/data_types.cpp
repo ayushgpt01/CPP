@@ -32,5 +32,8 @@ int main()
 
     // C++14 allows to put commas in numbers
     long long int peopleOnEarth = 7'600'000'000;
-    cout << "Earth has " << peopleOnEarth << " people.";
+    cout << "Earth has " << peopleOnEarth << " people." << endl;
+
+    long double largeAmount = 1.27e120;
+    cout << "Large Amount = " << largeAmount;
 }
