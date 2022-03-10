@@ -15,6 +15,7 @@ int main()
         cout << "S - Display the smallest number" << endl;
         cout << "L - Display the largest number" << endl;
         cout << "N - Display count of a number" << endl;
+        cout << "C - Clear List" << endl;
         cout << "Q - Quit" << endl;
         cout << "\nEnter your choice ";
         cin >> selection;
