@@ -55,8 +55,7 @@ int main()
                 {
                     mean += vec;
                 }
-                mean /= vect.size();
-                cout << "\nThe mean is " << mean << endl;
+                cout << "\nThe mean is " << static_cast<double>(mean)/vect.size() << endl;
             }
             break;
         case 's':
