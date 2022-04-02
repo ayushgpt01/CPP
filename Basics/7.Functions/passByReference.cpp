@@ -8,7 +8,7 @@ void swap(int &a, int &b) {
     b = temp;
 }
 
-void printVector(vector<int> &v) {
+void printVector(const vector<int> &v) {
     for(int x : v){
         cout << x << " ";
     }
