@@ -27,5 +27,9 @@ int main() {
     cout << *ptr << endl;
     cout << *(ptr+1) << endl;
     cout << *(ptr+2) << endl;
+
+    // as compiler converts subscript to offset internally arr[0] == 0[arr]
+    cout << "Value of array at 0 with arr[0] : " << arr[0] << endl;
+    cout << "Value of array at 0 with 0[arr] : " << 0[arr] << endl;
     return 0;
 }
