@@ -3,6 +3,9 @@ using namespace std;
 
 void insertSort(int a[], int n)
 {
+    // Insertion Sort is an in-place and stable algorithm which inserts the key in the presorted array at the right place.
+    // In-Place refers to no additional memory allocated during sorting
+    // Stable algorithm is that which sorts in the order of input
     int key, i;
     for (i = 1; i < n; i++)
     {
