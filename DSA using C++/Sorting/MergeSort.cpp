@@ -4,6 +4,9 @@ using namespace std;
 // Merge Sort is a Divide and Conquer Sorting Algorithm where we divide array into sub arrays until each sub array is of size 1 then merge them into one array while sorting them.
 // This is an external sort algorithm (Sorting algo which can sort data size higher than available RAM by utilizing Disk space).
 // Merge Sort Time Complexity - O(n logn)
+
+//T(n) = T(n/2) + cn
+
 void mergeSort(int arr[],int p,int r);
 // Merge Function takes O(n) Time
 void merge(int arr[],int p,int q,int r);
