@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+// Time Complexity - O(n^2)
+// Swaps - O(n)
 void selectionSort(int arr[],int n);
 
 void print(const int a[], int n)
