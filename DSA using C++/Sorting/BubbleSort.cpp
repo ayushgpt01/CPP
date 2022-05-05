@@ -15,9 +15,7 @@ void bubbleSort(int arr[],size_t n)
         {
             if(arr[i] > arr[i+1])
             {
-                arr[i] += arr[i+1];
-                arr[i+1] = arr[i] - arr[i+1];
-                arr[i] -= arr[i+1];
+                swap(arr[i],arr[i+1]);
                 swapped = true;
             }
         }
