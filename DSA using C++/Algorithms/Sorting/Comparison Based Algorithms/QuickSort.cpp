@@ -6,6 +6,7 @@ void quickSort(int arr[], int p, int n);
 // Divide and conquer Algorithm
 // Worst Case - O(n^2) (Sorted array)
 // Best Case - O(nlogn)
+// S(n) - O(n) bcoz of call stack
 void quickSort(int arr[], int p, int n)
 {
     if (p < n)  // atleast 1 element in array
