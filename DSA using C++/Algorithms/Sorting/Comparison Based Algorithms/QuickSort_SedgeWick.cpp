@@ -31,6 +31,7 @@ void quickSort(int arr[], int p, int n)
     while (p < n) 
     {
         int q = partition(arr, p, n);
+        // Recurse on the smaller sub array
         if(q-p < n-q)
         {
             quickSort(arr, p, q - 1);    
