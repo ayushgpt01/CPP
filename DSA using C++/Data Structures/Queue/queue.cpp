@@ -31,7 +31,8 @@ public:
     }
 
     void insert(int x);
-    void remove();
+    bool isEmpty();
+    int remove();
     void print();
 };
 
@@ -50,7 +51,7 @@ void Queue::insert(int x)
 }
 
 // O(1) - dequeue
-void Queue::remove()
+int Queue::remove()
 {
     if (head == nullptr)
     {
@@ -58,12 +59,21 @@ void Queue::remove()
         return;
     }
     Node *temp = head;
-    cout << "Deleted item " << head->data << endl;
+    int info = head->data;
+    cout << "Deleted item " << info << endl;
     if(head->next == nullptr)
         head = nullptr;
     else
         head = head->next;
     delete (temp);
+    return info;
+}
+
+bool Queue::isEmpty()
+{
+    if(head == nullptr)
+        return true;
+    return false;
 }
 
 void Queue::print()
@@ -75,6 +85,17 @@ void Queue::print()
         temp = temp->next;
     }
     cout << endl;
+}
+
+void reverseQueue(Queue q)
+{
+    int i {0};
+    if(!(q.isEmpty()))
+    {
+        i = q.remove();
+        reverseQueue(q);
+        q.insert(i);
+    }
 }
 
 int main()
