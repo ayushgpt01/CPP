@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-// T(n) - O(log n)
+// T(n) - O(lg n)
 int binarySearch(int arr[], int size, int data)
 {
     // Needs a sorted array
