@@ -8,17 +8,9 @@ public:
     Node *next;
 
     // Default constructor for node
-    Node()
-    {
-        data = 0;
-        next = nullptr;
-    }
+    Node() : data(0),next(nullptr){}
     // Parameterized Constructor for node
-    Node(int x)
-    {
-        data = x;
-        next = nullptr;
-    }
+    Node(int x) : data(x),next(nullptr){}
 };
 
 class LinkedList
@@ -28,10 +20,7 @@ class LinkedList
 
 public:
     // Constructor to initialize head pointer to null as soon as new list is created
-    LinkedList()
-    {
-        head = nullptr;
-    }
+    LinkedList(): head(nullptr){}
     void insertBegin(int);
     void insertEnd(int);
     void insertAfter(int, int);

@@ -7,25 +7,15 @@ class Node
 public:
     int data;
     Node* next;
-    Node()
-    {
-        next = nullptr;
-    }
-    Node(int x)
-    {
-        data = x;
-        next = nullptr;
-    }
+    Node() : next(nullptr){}
+    Node(int x) : data(x),next(nullptr){}
 };
 
 class Stack
 {
     Node* top;
 public:
-    Stack()
-    {
-        top = nullptr;
-    }
+    Stack() : top(nullptr){}
 
     void push(int x);
     void pop();

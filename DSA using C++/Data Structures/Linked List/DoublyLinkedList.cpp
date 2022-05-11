@@ -9,18 +9,8 @@ public:
     Node* next;
     Node* prev;
 
-    Node()
-    {
-        data = 0;
-        next = nullptr;
-        prev = nullptr;
-    }
-    Node(int x)
-    {
-        data = x;
-        next = nullptr;
-        prev = nullptr;
-    }
+    Node() : data(0),next(nullptr),prev(nullptr){}
+    Node(int x) : data(x),next(nullptr),prev(nullptr){}
 };
 
 class LinkedList
@@ -28,10 +18,7 @@ class LinkedList
     Node *head;
 
 public:
-    LinkedList()
-    {
-        head = nullptr;
-    }
+    LinkedList() : head(nullptr){}
     void insertBegin(int);
     void insertEnd(int);
     void insertAfter(int, int);

@@ -7,10 +7,7 @@ class stack
 public:
     int a[10];
 
-    stack()
-    {
-        top = -1;
-    }
+    stack() : top(-1){}
 
     void push(int x);
     void pop();
